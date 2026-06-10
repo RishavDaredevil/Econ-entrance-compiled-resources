@@ -241,7 +241,7 @@
     <!-- Card Toggle Logic -->
     <script>
         function toggleCard(btn) {
-            const previewDiv = btn.parentElement.nextElementSibling;
+            const previewDiv = btn.closest('.bg-white').querySelector('.bg-slate-50');
             if (previewDiv.classList.contains('hidden')) {
                 previewDiv.classList.remove('hidden');
                 previewDiv.classList.add('flex');
