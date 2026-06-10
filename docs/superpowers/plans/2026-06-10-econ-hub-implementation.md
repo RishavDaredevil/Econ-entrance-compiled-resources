@@ -1,0 +1,440 @@
+# Econ Entrance Hub Implementation Plan
+
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+
+**Goal:** Build a single, highly polished static HTML landing page (`index.html`) using Tailwind CSS (via CDN) and Vanilla JS for audio controls, serving as a hub for Economics entrance exam resources.
+
+**Architecture:** A static HTML document with inline Tailwind styling. The page is divided into semantic sections (Hero, Spotlight, Categories, Footer, Sticky Player). State for the audio player is managed locally via Vanilla JS script at the bottom of the body. Resources are hot-linked to local relative paths.
+
+**Tech Stack:** HTML5, Tailwind CSS (CDN), FontAwesome (CDN), Vanilla JS.
+
+---
+
+### Task 1: Scaffolding and Hero Section
+
+**Files:**
+- Create: `index.html`
+
+- [ ] **Step 1: Write the initial HTML structure and Hero section**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Econ Entrance Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Hide scrollbar for clean grid scrolling on mobile */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 font-sans pb-24"> <!-- pb-24 for sticky player space -->
+    
+    <!-- Hero Section -->
+    <header class="max-w-4xl mx-auto pt-20 pb-12 px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
+            Econ Entrance Hub
+        </h1>
+        <p class="text-lg md:text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
+            The ultimate, curated collection of visual cheat sheets, audio notes, and deep-research docs for CUET PG & IIT JAM.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a href="https://econ-entrance-cbt-tests.pages.dev/" target="_blank" rel="noopener noreferrer" 
+               class="w-full sm:w-auto px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg shadow-md transition-colors text-center">
+                Attempt CBT Mock Tests
+            </a>
+            <a href="http://econ-entrance-doubts-and-explanations.pages.dev/" target="_blank" rel="noopener noreferrer"
+               class="w-full sm:w-auto px-6 py-3 border-2 border-indigo-600 text-indigo-700 hover:bg-indigo-50 font-semibold rounded-lg transition-colors text-center">
+                Doubts & Explanations
+            </a>
+        </div>
+    </header>
+
+</body>
+</html>
+```
+
+- [ ] **Step 2: Commit**
+
+```bash
+git add index.html
+git commit -m "feat: scaffold HTML and add hero section"
+```
+
+---
+
+### Task 2: Special Spotlight Cards
+
+**Files:**
+- Modify: `index.html`
+
+- [ ] **Step 1: Add the Spotlight Section below the Header**
+
+*Insert this immediately after the `</header>` closing tag in `index.html`.*
+
+```html
+    <!-- Special Spotlight Section -->
+    <section class="max-w-7xl mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-2">
+            <i class="fa-solid fa-star text-amber-400"></i> Special Spotlight
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Card 1 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-indigo-600 overflow-hidden flex flex-col">
+                <div class="h-40 bg-slate-100 flex items-center justify-center overflow-hidden">
+                    <img src="Special/International Trade.png" alt="International Trade" class="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition-opacity">
+                </div>
+                <div class="p-5 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">International Trade</h3>
+                        <p class="text-sm text-slate-600 mb-4">Visual cheat sheet mapping out key international trade theories.</p>
+                    </div>
+                    <a href="Special/International Trade.png" target="_blank" class="block w-full text-center py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
+                        View Resource
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-indigo-600 overflow-hidden flex flex-col">
+                <div class="h-40 bg-slate-100 flex items-center justify-center overflow-hidden">
+                    <img src="Special/optimization.png" alt="Optimization Cheat Sheet" class="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition-opacity">
+                </div>
+                <div class="p-5 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Optimization</h3>
+                        <p class="text-sm text-slate-600 mb-4">Geometric properties and optimization math visualization.</p>
+                    </div>
+                    <a href="Special/optimization.png" target="_blank" class="block w-full text-center py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
+                        View Resource
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-indigo-600 overflow-hidden flex flex-col">
+                <div class="h-40 bg-slate-100 flex items-center justify-center overflow-hidden">
+                    <img src="Special/Many Economists' Theories.png" alt="Many Economists' Theories" class="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition-opacity">
+                </div>
+                <div class="p-5 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Many Economists' Theories</h3>
+                        <p class="text-sm text-slate-600 mb-4">Comprehensive mapping of major economists to their primary theories.</p>
+                    </div>
+                    <a href="Special/Many Economists' Theories.png" target="_blank" class="block w-full text-center py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
+                        View Resource
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-indigo-600 overflow-hidden flex flex-col">
+                <div class="h-40 bg-slate-100 flex items-center justify-center overflow-hidden">
+                    <img src="Special/(Shocks in Keynesian)SHIFTS IN THE IS CURVE.png" alt="Shocks in Keynesian IS Curve" class="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition-opacity">
+                </div>
+                <div class="p-5 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Keynesian IS Shocks</h3>
+                        <p class="text-sm text-slate-600 mb-4">Visual breakdown of how different shocks shift the IS curve.</p>
+                    </div>
+                    <a href="Special/(Shocks in Keynesian)SHIFTS IN THE IS CURVE.png" target="_blank" class="block w-full text-center py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
+                        View Resource
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-indigo-600 overflow-hidden flex flex-col">
+                <div class="h-40 bg-slate-100 flex items-center justify-center text-indigo-400 text-5xl">
+                    <i class="fa-solid fa-book-journal-whills"></i>
+                </div>
+                <div class="p-5 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Interactive Study Notebooks</h3>
+                        <p class="text-sm text-slate-600 mb-4">Compilation of learning materials and links.</p>
+                    </div>
+                    <a href="Special/Notebook lm links compilation.md" target="_blank" class="block w-full text-center py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
+                        Open Markdown
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+```
+
+- [ ] **Step 2: Commit**
+
+```bash
+git add index.html
+git commit -m "feat: add spotlight cards grid"
+```
+
+---
+
+### Task 3: Deep Dive Categories & Footer
+
+**Files:**
+- Modify: `index.html`
+
+- [ ] **Step 1: Add Categories and Footer**
+
+*Insert this below the Spotlight section closing tag `</section>`.*
+
+```html
+    <!-- Deep Dive Categories -->
+    <section class="max-w-7xl mx-auto px-4 py-12 border-t border-slate-100">
+        <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-2">
+            <i class="fa-solid fa-layer-group text-indigo-500"></i> Explore All Resources
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Category 1 -->
+            <a href="Econ-entrance-more-resources/CUET Indian Econ Docs/" class="group block p-4 bg-slate-50 hover:bg-indigo-50 rounded-lg border border-slate-200 transition-colors">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-rupee-sign"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">Indian Economy</h4>
+                        <p class="text-sm text-slate-500">CUET & IIT JAM deep research docs.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Category 2 -->
+            <a href="Econ-entrance-more-resources/Math Viz/" class="group block p-4 bg-slate-50 hover:bg-indigo-50 rounded-lg border border-slate-200 transition-colors">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-square-root-variable"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">Math & Visualizations</h4>
+                        <p class="text-sm text-slate-500">Animated GIFs and theoretical graphs.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Category 3 -->
+            <a href="Econ-entrance-more-resources/Economic_Surveys/" class="group block p-4 bg-slate-50 hover:bg-indigo-50 rounded-lg border border-slate-200 transition-colors">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">Economic Surveys (2016-2025)</h4>
+                        <p class="text-sm text-slate-500">Archived chapters and full surveys.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Category 4 -->
+            <a href="Econ-entrance-more-resources/Econ images/" class="group block p-4 bg-slate-50 hover:bg-indigo-50 rounded-lg border border-slate-200 transition-colors">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-image"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">Micro/Macro Concept Vault</h4>
+                        <p class="text-sm text-slate-500">Market structures, macro models, deadweight loss.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-slate-500 text-sm border-t border-slate-200 mt-8 mb-20">
+        <p>Open Source Resource Hub.</p>
+        <a href="https://github.com/RishavDaredevil/Econ-entrance-compiled-resources" target="_blank" class="text-indigo-600 hover:underline inline-flex items-center gap-1 mt-2">
+            <i class="fa-brands fa-github"></i> Contribute on GitHub
+        </a>
+    </footer>
+```
+
+- [ ] **Step 2: Commit**
+
+```bash
+git add index.html
+git commit -m "feat: add categories section and footer"
+```
+
+---
+
+### Task 4: Sticky Audio Player HTML & CSS
+
+**Files:**
+- Modify: `index.html`
+
+- [ ] **Step 1: Add the Sticky Player markup**
+
+*Insert this just before the closing `</body>` tag.*
+
+```html
+    <!-- Sticky Audio Player -->
+    <div class="fixed bottom-0 left-0 w-full bg-slate-900 text-white shadow-2xl z-50 border-t border-slate-800 p-3 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <!-- Hidden Audio Element -->
+        <audio id="global-audio-player" preload="metadata">
+            <source src="Special/Major_Economists_and_their_Economic_Theories.m4a" type="audio/mp4">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Left: Controls & Track Info -->
+        <div class="flex items-center gap-4 w-full sm:w-auto">
+            <button id="play-pause-btn" class="w-10 h-10 flex-shrink-0 bg-indigo-500 hover:bg-indigo-600 rounded-full flex items-center justify-center text-white focus:outline-none transition-colors">
+                <i class="fa-solid fa-play" id="play-icon"></i>
+                <i class="fa-solid fa-pause hidden" id="pause-icon"></i>
+            </button>
+            <div class="min-w-0">
+                <h4 id="track-title" class="text-sm font-bold truncate w-48 sm:w-64">Major Economists</h4>
+                <div class="flex items-center gap-2 text-xs text-slate-400 mt-1">
+                    <span id="current-time">0:00</span>
+                    <div class="w-24 sm:w-32 h-1.5 bg-slate-700 rounded-full cursor-pointer relative" id="progress-bar-container">
+                        <div id="progress-bar" class="absolute top-0 left-0 h-full bg-indigo-400 rounded-full pointer-events-none" style="width: 0%;"></div>
+                    </div>
+                    <span id="duration-time">0:00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Track Selector & Download -->
+        <div class="flex items-center gap-3 w-full sm:w-auto">
+            <select id="track-selector" class="bg-slate-800 border border-slate-700 text-slate-200 text-sm rounded-md px-2 py-1.5 focus:outline-none focus:border-indigo-500 w-full sm:w-auto appearance-none">
+                <option value="Special/Major_Economists_and_their_Economic_Theories.m4a">Major Economists</option>
+                <option value="Special/India’s_$45_Trillion_Heist_and_Recovery.m4a">India's $45 Trillion Heist</option>
+                <option value="Special/(More)Books_and_authors.m4a">Books and Authors</option>
+            </select>
+            <a id="download-btn" href="Special/Major_Economists_and_their_Economic_Theories.m4a" download class="flex-shrink-0 p-2 text-slate-400 hover:text-white transition-colors" title="Download Audio">
+                <i class="fa-solid fa-download"></i>
+            </a>
+        </div>
+    </div>
+```
+
+- [ ] **Step 2: Commit**
+
+```bash
+git add index.html
+git commit -m "feat: add sticky audio player markup"
+```
+
+---
+
+### Task 5: Audio Player Interactivity (Vanilla JS)
+
+**Files:**
+- Modify: `index.html`
+
+- [ ] **Step 1: Add the Logic script**
+
+*Insert this script block immediately after the Sticky Audio Player `</div>`, just before `</body>`.*
+
+```html
+    <!-- Audio Player Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('global-audio-player');
+            const playPauseBtn = document.getElementById('play-pause-btn');
+            const playIcon = document.getElementById('play-icon');
+            const pauseIcon = document.getElementById('pause-icon');
+            const trackTitle = document.getElementById('track-title');
+            const trackSelector = document.getElementById('track-selector');
+            const downloadBtn = document.getElementById('download-btn');
+            const currentTimeEl = document.getElementById('current-time');
+            const durationTimeEl = document.getElementById('duration-time');
+            const progressContainer = document.getElementById('progress-bar-container');
+            const progressBar = document.getElementById('progress-bar');
+
+            // Format time helper (seconds -> m:ss)
+            function formatTime(seconds) {
+                if (isNaN(seconds)) return "0:00";
+                const mins = Math.floor(seconds / 60);
+                const secs = Math.floor(seconds % 60);
+                return `${mins}:${secs.toString().padStart(2, '0')}`;
+            }
+
+            // Update Play/Pause UI
+            function updatePlayState() {
+                if (audio.paused) {
+                    playIcon.classList.remove('hidden');
+                    pauseIcon.classList.add('hidden');
+                } else {
+                    playIcon.classList.add('hidden');
+                    pauseIcon.classList.remove('hidden');
+                }
+            }
+
+            // Play/Pause toggle
+            playPauseBtn.addEventListener('click', () => {
+                if (audio.paused) audio.play();
+                else audio.pause();
+                updatePlayState();
+            });
+
+            // Handle track change
+            trackSelector.addEventListener('change', (e) => {
+                const isPlaying = !audio.paused;
+                const src = e.target.value;
+                const title = e.target.options[e.target.selectedIndex].text;
+                
+                audio.src = src;
+                trackTitle.textContent = title;
+                downloadBtn.href = src;
+                
+                audio.load();
+                if (isPlaying) {
+                    audio.play().catch(err => console.error("Auto-play prevented", err));
+                }
+                updatePlayState();
+            });
+
+            // Update Progress UI
+            audio.addEventListener('timeupdate', () => {
+                currentTimeEl.textContent = formatTime(audio.currentTime);
+                if (audio.duration) {
+                    const progressPercent = (audio.currentTime / audio.duration) * 100;
+                    progressBar.style.width = `${progressPercent}%`;
+                }
+            });
+
+            // Set duration when metadata loads
+            audio.addEventListener('loadedmetadata', () => {
+                durationTimeEl.textContent = formatTime(audio.duration);
+            });
+
+            // Reset UI on end
+            audio.addEventListener('ended', () => {
+                updatePlayState();
+                progressBar.style.width = '0%';
+                currentTimeEl.textContent = '0:00';
+            });
+
+            // Click to seek
+            progressContainer.addEventListener('click', (e) => {
+                const rect = progressContainer.getBoundingClientRect();
+                const pos = (e.clientX - rect.left) / rect.width;
+                if (audio.duration) {
+                    audio.currentTime = pos * audio.duration;
+                }
+            });
+        });
+    </script>
+```
+
+- [ ] **Step 2: Commit**
+
+```bash
+git add index.html
+git commit -m "feat: implement audio player logic"
+```
