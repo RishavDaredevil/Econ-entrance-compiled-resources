@@ -199,5 +199,44 @@
         </a>
     </footer>
 
+    <!-- Sticky Audio Player -->
+    <div class="fixed bottom-0 left-0 w-full bg-slate-900 text-white shadow-2xl z-50 border-t border-slate-800 p-3 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <!-- Hidden Audio Element -->
+        <audio id="global-audio-player" preload="metadata">
+            <source src="Special/Major_Economists_and_their_Economic_Theories.m4a" type="audio/mp4">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Left: Controls & Track Info -->
+        <div class="flex items-center gap-4 w-full sm:w-auto">
+            <button id="play-pause-btn" class="w-10 h-10 flex-shrink-0 bg-indigo-500 hover:bg-indigo-600 rounded-full flex items-center justify-center text-white focus:outline-none transition-colors">
+                <i class="fa-solid fa-play" id="play-icon"></i>
+                <i class="fa-solid fa-pause hidden" id="pause-icon"></i>
+            </button>
+            <div class="min-w-0">
+                <h4 id="track-title" class="text-sm font-bold truncate w-48 sm:w-64">Major Economists</h4>
+                <div class="flex items-center gap-2 text-xs text-slate-400 mt-1">
+                    <span id="current-time">0:00</span>
+                    <div class="w-24 sm:w-32 h-1.5 bg-slate-700 rounded-full cursor-pointer relative" id="progress-bar-container">
+                        <div id="progress-bar" class="absolute top-0 left-0 h-full bg-indigo-400 rounded-full pointer-events-none" style="width: 0%;"></div>
+                    </div>
+                    <span id="duration-time">0:00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Track Selector & Download -->
+        <div class="flex items-center gap-3 w-full sm:w-auto">
+            <select id="track-selector" class="bg-slate-800 border border-slate-700 text-slate-200 text-sm rounded-md px-2 py-1.5 focus:outline-none focus:border-indigo-500 w-full sm:w-auto appearance-none">
+                <option value="Special/Major_Economists_and_their_Economic_Theories.m4a">Major Economists</option>
+                <option value="Special/India’s_$45_Trillion_Heist_and_Recovery.m4a">India's $45 Trillion Heist</option>
+                <option value="Special/(More)Books_and_authors.m4a">Books and Authors</option>
+            </select>
+            <a id="download-btn" href="Special/Major_Economists_and_their_Economic_Theories.m4a" download class="flex-shrink-0 p-2 text-slate-400 hover:text-white transition-colors" title="Download Audio">
+                <i class="fa-solid fa-download"></i>
+            </a>
+        </div>
+    </div>
+
 </body>
 </html>
