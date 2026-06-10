@@ -130,6 +130,106 @@
         </div>
     </section>
 
+    <!-- Podcasts Section -->
+    <section class="max-w-7xl mx-auto px-4 py-12 border-t border-slate-100">
+        <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-2">
+            <i class="fa-solid fa-podcast text-indigo-500"></i> Select Podcasts (generated From Notebook LM)
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Podcast 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200 flex flex-col">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-12 h-12 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-600">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900">Major Economists</h3>
+                </div>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">An engaging audio overview discussing the most influential economists in history and their core economic theories.</p>
+                <button onclick="document.getElementById('track-selector').value='Special/Major_Economists_and_their_Economic_Theories.m4a'; document.getElementById('track-selector').dispatchEvent(new Event('change'));" class="w-full py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
+                    <i class="fa-solid fa-play mr-1"></i> Play in Player
+                </button>
+            </div>
+
+            <!-- Podcast 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200 flex flex-col">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-12 h-12 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-600">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900">India's $45 Trillion Heist</h3>
+                </div>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">A deep dive audio discussion into the economic historical context of wealth extraction from India and its subsequent recovery trajectory.</p>
+                <button onclick="document.getElementById('track-selector').value='Special/India’s_$45_Trillion_Heist_and_Recovery.m4a'; document.getElementById('track-selector').dispatchEvent(new Event('change'));" class="w-full py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
+                    <i class="fa-solid fa-play mr-1"></i> Play in Player
+                </button>
+            </div>
+
+            <!-- Podcast 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200 flex flex-col">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-12 h-12 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-600">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900">Books and Authors</h3>
+                </div>
+                <p class="text-sm text-slate-600 mb-4 flex-grow">A quick audio review of essential economic literature, matching famous books with their respective authors for entrance exams.</p>
+                <button onclick="document.getElementById('track-selector').value='Special/(More)Books_and_authors.m4a'; document.getElementById('track-selector').dispatchEvent(new Event('change'));" class="w-full py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
+                    <i class="fa-solid fa-play mr-1"></i> Play in Player
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notebook LM Links Section -->
+    <section class="max-w-7xl mx-auto px-4 py-12 border-t border-slate-100">
+        <h2 class="text-2xl font-bold text-slate-900 mb-2 flex items-center gap-2">
+            <i class="fa-solid fa-book-open-reader text-indigo-500"></i> Interactive Study Notebooks
+        </h2>
+        <p class="text-slate-600 mb-8 max-w-3xl">Explore these dedicated NotebookLM links for deep research, data compilations, and personal lecture notes. <strong class="text-indigo-600">Be sure to use the Quiz and Flashcards generated there for active recall!</strong> (Requires Google Login)</p>
+        
+        <div class="space-y-4">
+            <!-- Link 1 -->
+            <a href="https://notebooklm.google.com/notebook/c3facd1b-f01d-4586-b27a-035f0d6c266b" target="_blank" rel="noopener noreferrer" class="group block bg-white p-5 rounded-xl shadow-sm border border-slate-200 hover:border-indigo-300 hover:shadow-md transition-all">
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 mt-1 bg-slate-50 rounded flex items-center justify-center text-slate-400 group-hover:text-indigo-600 group-hover:bg-indigo-50 transition-colors">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-800 group-hover:text-indigo-600 transition-colors">CUET Researched Books and Authors</h3>
+                        <p class="text-sm text-slate-500 mt-1">Contains comprehensive lists and research on important economic literature.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Link 2 -->
+            <a href="https://notebooklm.google.com/notebook/a51bcf55-9127-46df-bbb4-f8bdfb584eb8" target="_blank" rel="noopener noreferrer" class="group block bg-white p-5 rounded-xl shadow-sm border border-slate-200 hover:border-indigo-300 hover:shadow-md transition-all">
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 mt-1 bg-slate-50 rounded flex items-center justify-center text-slate-400 group-hover:text-indigo-600 group-hover:bg-indigo-50 transition-colors">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-800 group-hover:text-indigo-600 transition-colors">CUET Major Economists and their Economic Theories</h3>
+                        <p class="text-sm text-slate-500 mt-1">Contains essential thinkers, their core theories, and contributions to the field.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Link 3 -->
+            <a href="https://notebooklm.google.com/notebook/38399254-d0ed-4c4b-a58a-760b31a4921e" target="_blank" rel="noopener noreferrer" class="group block bg-white p-5 rounded-xl shadow-sm border border-slate-200 hover:border-indigo-300 hover:shadow-md transition-all">
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 mt-1 bg-slate-50 rounded flex items-center justify-center text-slate-400 group-hover:text-indigo-600 group-hover:bg-indigo-50 transition-colors">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-800 group-hover:text-indigo-600 transition-colors">CUET Past and Current India Data Deep Research</h3>
+                        <p class="text-sm text-slate-500 mt-1">Contains important statistical data, historical trends, and current economic indicators for India.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
     <!-- Deep Dive Categories -->
     <section class="max-w-7xl mx-auto px-4 py-12 border-t border-slate-100">
         <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-2">
