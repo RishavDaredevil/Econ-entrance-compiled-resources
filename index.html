@@ -238,5 +238,95 @@
         </div>
     </div>
 
+    <!-- Audio Player Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('global-audio-player');
+            const playPauseBtn = document.getElementById('play-pause-btn');
+            const playIcon = document.getElementById('play-icon');
+            const pauseIcon = document.getElementById('pause-icon');
+            const trackTitle = document.getElementById('track-title');
+            const trackSelector = document.getElementById('track-selector');
+            const downloadBtn = document.getElementById('download-btn');
+            const currentTimeEl = document.getElementById('current-time');
+            const durationTimeEl = document.getElementById('duration-time');
+            const progressContainer = document.getElementById('progress-bar-container');
+            const progressBar = document.getElementById('progress-bar');
+
+            // Format time helper (seconds -> m:ss)
+            function formatTime(seconds) {
+                if (isNaN(seconds)) return "0:00";
+                const mins = Math.floor(seconds / 60);
+                const secs = Math.floor(seconds % 60);
+                return `${mins}:${secs.toString().padStart(2, '0')}`;
+            }
+
+            // Update Play/Pause UI
+            function updatePlayState() {
+                if (audio.paused) {
+                    playIcon.classList.remove('hidden');
+                    pauseIcon.classList.add('hidden');
+                } else {
+                    playIcon.classList.add('hidden');
+                    pauseIcon.classList.remove('hidden');
+                }
+            }
+
+            // Play/Pause toggle
+            playPauseBtn.addEventListener('click', () => {
+                if (audio.paused) audio.play();
+                else audio.pause();
+                updatePlayState();
+            });
+
+            // Handle track change
+            trackSelector.addEventListener('change', (e) => {
+                const isPlaying = !audio.paused;
+                const src = e.target.value;
+                const title = e.target.options[e.target.selectedIndex].text;
+                
+                audio.src = src;
+                trackTitle.textContent = title;
+                downloadBtn.href = src;
+                
+                audio.load();
+                if (isPlaying) {
+                    audio.play().catch(err => console.error("Auto-play prevented", err));
+                }
+                updatePlayState();
+            });
+
+            // Update Progress UI
+            audio.addEventListener('timeupdate', () => {
+                currentTimeEl.textContent = formatTime(audio.currentTime);
+                if (audio.duration) {
+                    const progressPercent = (audio.currentTime / audio.duration) * 100;
+                    progressBar.style.width = `${progressPercent}%`;
+                }
+            });
+
+            // Set duration when metadata loads
+            audio.addEventListener('loadedmetadata', () => {
+                durationTimeEl.textContent = formatTime(audio.duration);
+            });
+
+            // Reset UI on end
+            audio.addEventListener('ended', () => {
+                updatePlayState();
+                progressBar.style.width = '0%';
+                currentTimeEl.textContent = '0:00';
+            });
+
+            // Click to seek
+            progressContainer.addEventListener('click', (e) => {
+                const rect = progressContainer.getBoundingClientRect();
+                const pos = (e.clientX - rect.left) / rect.width;
+                if (audio.duration) {
+                    audio.currentTime = pos * audio.duration;
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
