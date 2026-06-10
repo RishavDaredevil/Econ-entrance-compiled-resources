@@ -41,11 +41,28 @@
                         <p class="text-sm text-slate-500">Comprehensive study material</p>
                     </div>
                 </div>
-                
+
+                <div class="bg-white p-4 rounded-xl shadow-md flex items-center gap-4 hover:shadow-lg transition">
+                    <div class="bg-indigo-100 text-indigo-600 p-4 rounded-lg flex-shrink-0">
+                        <i class="fa-solid fa-file-word text-2xl"></i>
+                    </div>
+                    <div>
+                        <a href="Econ-entrance-more-resources/CUET%20Indian%20Econ%20Docs/CUET%20Deep%20Research%20Docs/CUET%20PG%20Economics%20Books,%20Authors%20&%20International%20trade%20theory.docx" class="font-bold text-lg text-indigo-600 hover:underline">Books, Authors & Trade Theory</a>
+                        <p class="text-sm text-slate-500">CUET PG Research Doc</p>
+                    </div>
+                </div>
+
                 <div class="bg-white p-4 rounded-xl shadow-md text-center hover:shadow-lg transition">
                     <a href="Special/Many%20Economists'%20Theories.png" target="_blank">
                         <img src="Special/Many%20Economists'%20Theories.png" class="w-full h-32 object-cover mb-2 rounded" alt="Many Economists' Theories">
                         <p class="font-bold text-sm text-indigo-600 hover:underline">Many Economists' Theories Overview</p>
+                    </a>
+                </div>
+
+                <div class="bg-white p-4 rounded-xl shadow-md text-center hover:shadow-lg transition">
+                    <a href="Econ-entrance-more-resources/Econ%20images/Imprtant%20Books%20and%20Authors.png" target="_blank">
+                        <img src="Econ-entrance-more-resources/Econ%20images/Imprtant%20Books%20and%20Authors.png" class="w-full h-32 object-cover mb-2 rounded" alt="Important Books and Authors">
+                        <p class="font-bold text-sm text-indigo-600 hover:underline">Important Books and Authors PNG</p>
                     </a>
                 </div>
             </div>
@@ -72,139 +89,69 @@
                 </div>
             </div>
         </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Podcasts & Audio Notes</h2>
+            <div class="grid md:grid-cols-1 gap-4">
+                <!-- India's $45 Trillion Heist -->
+                <div class="bg-white p-4 rounded-xl shadow-md flex items-center justify-between hover:shadow-lg transition">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full">
+                            <i class="fa-solid fa-podcast text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800">India's $45 Trillion Heist and Recovery</h4>
+                            <p class="text-xs text-slate-500">Audio Podcast</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <a href="Econ-entrance-more-resources/Great_audio_Podcasts/India’s_$45_Trillion_Heist_and_Recovery.m4a" download class="bg-slate-100 hover:bg-slate-200 text-slate-600 p-2 rounded-lg transition" title="Download">
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Major Economists -->
+                <div class="bg-white p-4 rounded-xl shadow-md flex items-center justify-between hover:shadow-lg transition">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full">
+                            <i class="fa-solid fa-podcast text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800">Major Economists and their Economic Theories</h4>
+                            <p class="text-xs text-slate-500">Audio Podcast</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <a href="Econ-entrance-more-resources/Great_audio_Podcasts/Major_Economists_and_their_Economic_Theories.m4a" download class="bg-slate-100 hover:bg-slate-200 text-slate-600 p-2 rounded-lg transition" title="Download">
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- (More) Books and Authors -->
+                <div class="bg-white p-4 rounded-xl shadow-md flex items-center justify-between hover:shadow-lg transition">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full">
+                            <i class="fa-solid fa-podcast text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800">(More) Books and Authors</h4>
+                            <p class="text-xs text-slate-500">Audio Podcast</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <a href="Econ-entrance-more-resources/Great_audio_Podcasts/(More)Books_and_authors.m4a" download class="bg-slate-100 hover:bg-slate-200 text-slate-600 p-2 rounded-lg transition" title="Download">
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="py-8 text-center text-slate-500 text-sm border-t border-slate-200 mt-8 mb-20">
         <a href="index.html" class="text-indigo-600 hover:underline">&larr; Back to Hub</a>
     </footer>
-
-    <!-- Sticky Audio Player -->
-    <div class="fixed bottom-0 left-0 w-full bg-slate-900 text-white shadow-2xl z-50 border-t border-slate-800 p-3 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <!-- Hidden Audio Element -->
-        <audio id="global-audio-player" preload="metadata">
-            <source src="Special/Major_Economists_and_their_Economic_Theories.m4a" type="audio/mp4">
-            Your browser does not support the audio element.
-        </audio>
-
-        <!-- Left: Controls & Track Info -->
-        <div class="flex items-center gap-4 w-full sm:w-auto">
-            <button id="play-pause-btn" class="w-10 h-10 flex-shrink-0 bg-indigo-500 hover:bg-indigo-600 rounded-full flex items-center justify-center text-white focus:outline-none transition-colors">
-                <i class="fa-solid fa-play" id="play-icon"></i>
-                <i class="fa-solid fa-pause hidden" id="pause-icon"></i>
-            </button>
-            <div class="min-w-0">
-                <h4 id="track-title" class="text-sm font-bold truncate w-48 sm:w-64">Major Economists</h4>
-                <div class="flex items-center gap-2 text-xs text-slate-400 mt-1">
-                    <span id="current-time">0:00</span>
-                    <div class="w-24 sm:w-32 h-1.5 bg-slate-700 rounded-full cursor-pointer relative" id="progress-bar-container">
-                        <div id="progress-bar" class="absolute top-0 left-0 h-full bg-indigo-400 rounded-full pointer-events-none" style="width: 0%;"></div>
-                    </div>
-                    <span id="duration-time">0:00</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Right: Track Selector & Download -->
-        <div class="flex items-center gap-3 w-full sm:w-auto">
-            <select id="track-selector" class="bg-slate-800 border border-slate-700 text-slate-200 text-sm rounded-md px-2 py-1.5 focus:outline-none focus:border-indigo-500 w-full sm:w-auto appearance-none">
-                <option value="Special/Major_Economists_and_their_Economic_Theories.m4a">Major Economists</option>
-                <option value="Special/India’s_$45_Trillion_Heist_and_Recovery.m4a">India's $45 Trillion Heist</option>
-                <option value="Special/(More)Books_and_authors.m4a">Books and Authors</option>
-            </select>
-            <a id="download-btn" href="Special/Major_Economists_and_their_Economic_Theories.m4a" download class="flex-shrink-0 p-2 text-slate-400 hover:text-white transition-colors" title="Download Audio">
-                <i class="fa-solid fa-download"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- Audio Player Logic -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const audio = document.getElementById('global-audio-player');
-            const playPauseBtn = document.getElementById('play-pause-btn');
-            const playIcon = document.getElementById('play-icon');
-            const pauseIcon = document.getElementById('pause-icon');
-            const trackTitle = document.getElementById('track-title');
-            const trackSelector = document.getElementById('track-selector');
-            const downloadBtn = document.getElementById('download-btn');
-            const currentTimeEl = document.getElementById('current-time');
-            const durationTimeEl = document.getElementById('duration-time');
-            const progressContainer = document.getElementById('progress-bar-container');
-            const progressBar = document.getElementById('progress-bar');
-
-            // Format time helper (seconds -> m:ss)
-            function formatTime(seconds) {
-                if (isNaN(seconds)) return "0:00";
-                const mins = Math.floor(seconds / 60);
-                const secs = Math.floor(seconds % 60);
-                return `${mins}:${secs.toString().padStart(2, '0')}`;
-            }
-
-            // Update Play/Pause UI
-            function updatePlayState() {
-                if (audio.paused) {
-                    playIcon.classList.remove('hidden');
-                    pauseIcon.classList.add('hidden');
-                } else {
-                    playIcon.classList.add('hidden');
-                    pauseIcon.classList.remove('hidden');
-                }
-            }
-
-            // Play/Pause toggle
-            playPauseBtn.addEventListener('click', () => {
-                if (audio.paused) audio.play();
-                else audio.pause();
-                updatePlayState();
-            });
-
-            // Handle track change
-            trackSelector.addEventListener('change', (e) => {
-                const isPlaying = !audio.paused;
-                const src = e.target.value;
-                const title = e.target.options[e.target.selectedIndex].text;
-                
-                audio.src = src;
-                trackTitle.textContent = title;
-                downloadBtn.href = src;
-                
-                audio.load();
-                if (isPlaying) {
-                    audio.play().catch(err => console.error("Auto-play prevented", err));
-                }
-                updatePlayState();
-            });
-
-            // Update Progress UI
-            audio.addEventListener('timeupdate', () => {
-                currentTimeEl.textContent = formatTime(audio.currentTime);
-                if (audio.duration) {
-                    const progressPercent = (audio.currentTime / audio.duration) * 100;
-                    progressBar.style.width = `${progressPercent}%`;
-                }
-            });
-
-            // Set duration when metadata loads
-            audio.addEventListener('loadedmetadata', () => {
-                durationTimeEl.textContent = formatTime(audio.duration);
-            });
-
-            // Reset UI on end
-            audio.addEventListener('ended', () => {
-                updatePlayState();
-                progressBar.style.width = '0%';
-                currentTimeEl.textContent = '0:00';
-            });
-
-            // Click to seek
-            progressContainer.addEventListener('click', (e) => {
-                const rect = progressContainer.getBoundingClientRect();
-                const pos = (e.clientX - rect.left) / rect.width;
-                if (audio.duration) {
-                    audio.currentTime = pos * audio.duration;
-                }
-            });
-        });
-    </script>
 </body>
 </html>
