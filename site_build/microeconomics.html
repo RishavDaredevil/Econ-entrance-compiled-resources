@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microeconomics - Econ Entrance Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans pb-24">
+    
+    <nav class="sticky top-0 bg-white/90 backdrop-blur-md border-b border-slate-200 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="font-bold text-xl text-indigo-600">Econ Entrance Hub</a>
+                </div>
+                <div class="hidden sm:flex sm:space-x-8 items-center">
+                    <a href="indian-economy.html" class="text-sm font-medium text-slate-500 hover:text-slate-900">Indian Economy</a>
+                    <a href="macroeconomics.html" class="text-sm font-medium text-slate-500 hover:text-slate-900">Macro</a>
+                    <a href="microeconomics.html" class="text-sm font-medium text-indigo-600 border-b-2 border-indigo-600 h-full flex items-center">Micro</a>
+                    <a href="math-and-optimization.html" class="text-sm font-medium text-slate-500 hover:text-slate-900">Math</a>
+                    <a href="history-and-tools.html" class="text-sm font-medium text-slate-500 hover:text-slate-900">History & Tools</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <h1 class="text-4xl font-extrabold text-slate-900 mb-8">Microeconomics</h1>
+        
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Core Theory</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-4 rounded-xl shadow-md text-center">
+                    <a href="Econ-entrance-more-resources/Econ%20images/consumer%20theory%20concepts.png" target="_blank">
+                        <img src="Econ-entrance-more-resources/Econ%20images/consumer%20theory%20concepts.png" class="w-full h-auto mb-2 rounded" alt="Consumer Theory Concepts">
+                        <p class="font-bold text-sm text-indigo-600 hover:underline">Consumer Theory Concepts</p>
+                    </a>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-md text-center">
+                    <a href="Econ-entrance-more-resources/Econ%20images/Production%20theory%20Theorems.png" target="_blank">
+                        <img src="Econ-entrance-more-resources/Econ%20images/Production%20theory%20Theorems.png" class="w-full h-auto mb-2 rounded" alt="Production Theory Theorems">
+                        <p class="font-bold text-sm text-indigo-600 hover:underline">Production Theory Theorems</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Market Structures</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-4 rounded-xl shadow-md text-center">
+                    <img src="Econ-entrance-more-resources/Econ%20images/Cheat%20Sheet%20of%20Geometric%20Properties%20for%20Market%20Structures.png" class="w-full h-auto mb-2 rounded border border-slate-100" alt="Market Structures Cheat Sheet">
+                    <p class="font-bold text-sm">Market Structures Cheat Sheet</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-md text-center">
+                    <img src="Econ-entrance-more-resources/Econ%20images/Duopoly%20Cheat%20Sheet%20of%20Geometric%20Properties%20for%20Market%20Structures.png" class="w-full h-auto mb-2 rounded border border-slate-100" alt="Duopoly Cheat Sheet">
+                    <p class="font-bold text-sm">Duopoly Cheat Sheet</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Welfare Economics</h2>
+            <div class="grid md:grid-cols-1 gap-6">
+                <div class="bg-white p-4 rounded-xl shadow-md text-center">
+                    <a href="Econ-entrance-more-resources/Econ%20images/Deadweight%20loss%20Price%20subsidy,%20Price%20floor,%20production%20Quota.png" target="_blank">
+                        <img src="Econ-entrance-more-resources/Econ%20images/Deadweight%20loss%20Price%20subsidy,%20Price%20floor,%20production%20Quota.png" class="w-full h-auto max-h-96 object-contain mx-auto mb-2 rounded" alt="Deadweight Loss">
+                        <p class="font-bold text-sm text-indigo-600 hover:underline">Deadweight Loss: Subsidy, Floor, Quota</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-8 text-center text-slate-500 text-sm border-t border-slate-200 mt-8 mb-20">
+        <a href="index.html" class="text-indigo-600 hover:underline">&larr; Back to Hub</a>
+    </footer>
+
+    <!-- Sticky Audio Player -->
+    <div class="fixed bottom-0 left-0 w-full bg-slate-900 text-white shadow-2xl z-50 border-t border-slate-800 p-3 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <!-- Hidden Audio Element -->
+        <audio id="global-audio-player" preload="metadata">
+            <source src="Special/Major_Economists_and_their_Economic_Theories.m4a" type="audio/mp4">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Left: Controls & Track Info -->
+        <div class="flex items-center gap-4 w-full sm:w-auto">
+            <button id="play-pause-btn" class="w-10 h-10 flex-shrink-0 bg-indigo-500 hover:bg-indigo-600 rounded-full flex items-center justify-center text-white focus:outline-none transition-colors">
+                <i class="fa-solid fa-play" id="play-icon"></i>
+                <i class="fa-solid fa-pause hidden" id="pause-icon"></i>
+            </button>
+            <div class="min-w-0">
+                <h4 id="track-title" class="text-sm font-bold truncate w-48 sm:w-64">Major Economists</h4>
+                <div class="flex items-center gap-2 text-xs text-slate-400 mt-1">
+                    <span id="current-time">0:00</span>
+                    <div class="w-24 sm:w-32 h-1.5 bg-slate-700 rounded-full cursor-pointer relative" id="progress-bar-container">
+                        <div id="progress-bar" class="absolute top-0 left-0 h-full bg-indigo-400 rounded-full pointer-events-none" style="width: 0%;"></div>
+                    </div>
+                    <span id="duration-time">0:00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Track Selector & Download -->
+        <div class="flex items-center gap-3 w-full sm:w-auto">
+            <select id="track-selector" class="bg-slate-800 border border-slate-700 text-slate-200 text-sm rounded-md px-2 py-1.5 focus:outline-none focus:border-indigo-500 w-full sm:w-auto appearance-none">
+                <option value="Special/Major_Economists_and_their_Economic_Theories.m4a">Major Economists</option>
+                <option value="Special/India’s_$45_Trillion_Heist_and_Recovery.m4a">India's $45 Trillion Heist</option>
+                <option value="Special/(More)Books_and_authors.m4a">Books and Authors</option>
+            </select>
+            <a id="download-btn" href="Special/Major_Economists_and_their_Economic_Theories.m4a" download class="flex-shrink-0 p-2 text-slate-400 hover:text-white transition-colors" title="Download Audio">
+                <i class="fa-solid fa-download"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Audio Player Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('global-audio-player');
+            const playPauseBtn = document.getElementById('play-pause-btn');
+            const playIcon = document.getElementById('play-icon');
+            const pauseIcon = document.getElementById('pause-icon');
+            const trackTitle = document.getElementById('track-title');
+            const trackSelector = document.getElementById('track-selector');
+            const downloadBtn = document.getElementById('download-btn');
+            const currentTimeEl = document.getElementById('current-time');
+            const durationTimeEl = document.getElementById('duration-time');
+            const progressContainer = document.getElementById('progress-bar-container');
+            const progressBar = document.getElementById('progress-bar');
+
+            // Format time helper (seconds -> m:ss)
+            function formatTime(seconds) {
+                if (isNaN(seconds)) return "0:00";
+                const mins = Math.floor(seconds / 60);
+                const secs = Math.floor(seconds % 60);
+                return `${mins}:${secs.toString().padStart(2, '0')}`;
+            }
+
+            // Update Play/Pause UI
+            function updatePlayState() {
+                if (audio.paused) {
+                    playIcon.classList.remove('hidden');
+                    pauseIcon.classList.add('hidden');
+                } else {
+                    playIcon.classList.add('hidden');
+                    pauseIcon.classList.remove('hidden');
+                }
+            }
+
+            // Play/Pause toggle
+            playPauseBtn.addEventListener('click', () => {
+                if (audio.paused) audio.play();
+                else audio.pause();
+                updatePlayState();
+            });
+
+            // Handle track change
+            trackSelector.addEventListener('change', (e) => {
+                const isPlaying = !audio.paused;
+                const src = e.target.value;
+                const title = e.target.options[e.target.selectedIndex].text;
+                
+                audio.src = src;
+                trackTitle.textContent = title;
+                downloadBtn.href = src;
+                
+                audio.load();
+                if (isPlaying) {
+                    audio.play().catch(err => console.error("Auto-play prevented", err));
+                }
+                updatePlayState();
+            });
+
+            // Update Progress UI
+            audio.addEventListener('timeupdate', () => {
+                currentTimeEl.textContent = formatTime(audio.currentTime);
+                if (audio.duration) {
+                    const progressPercent = (audio.currentTime / audio.duration) * 100;
+                    progressBar.style.width = `${progressPercent}%`;
+                }
+            });
+
+            // Set duration when metadata loads
+            audio.addEventListener('loadedmetadata', () => {
+                durationTimeEl.textContent = formatTime(audio.duration);
+            });
+
+            // Reset UI on end
+            audio.addEventListener('ended', () => {
+                updatePlayState();
+                progressBar.style.width = '0%';
+                currentTimeEl.textContent = '0:00';
+            });
+
+            // Click to seek
+            progressContainer.addEventListener('click', (e) => {
+                const rect = progressContainer.getBoundingClientRect();
+                const pos = (e.clientX - rect.left) / rect.width;
+                if (audio.duration) {
+                    audio.currentTime = pos * audio.duration;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
