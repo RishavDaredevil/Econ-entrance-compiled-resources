@@ -64,7 +64,11 @@ To preview the site locally:
    ```bash
    ./build.sh
    ```
-3. Open `site_build/index.html` in your browser.
+3. Serve the `site_build` directory locally using Python's built-in HTTP server. To start the server on a specific port (e.g., port 8000), run:
+   ```bash
+   python3 -m http.server 8000 --directory site_build
+   ```
+4. Open your browser and navigate to `http://localhost:8000`.
 
 ---
 
