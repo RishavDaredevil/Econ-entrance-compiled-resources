@@ -45,19 +45,52 @@
             Econ Entrance Hub
         </h1>
         <p class="text-lg md:text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
-            The ultimate, curated collection of visual cheat sheets, audio notes, and deep-research docs for CUET PG & IIT JAM.
+            My personal, curated collection of visual cheat sheets, audio notes, and deep-research docs for ISI MSQE, CUET PG & IIT JAM.
         </p>
-        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <a href="https://econ-entrance-cbt-tests.pages.dev/" target="_blank" rel="noopener noreferrer" 
-               class="w-full sm:w-auto px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg shadow-md transition-colors text-center">
-                Attempt CBT Mock Tests
-            </a>
-            <a href="http://econ-entrance-doubts-and-explanations.pages.dev/" target="_blank" rel="noopener noreferrer"
-               class="w-full sm:w-auto px-6 py-3 border-2 border-indigo-600 text-indigo-700 hover:bg-indigo-50 font-semibold rounded-lg transition-colors text-center">
-                Doubts & Explanations
-            </a>
-        </div>
     </header>
+
+    <!-- Platforms Section -->
+    <section class="max-w-7xl mx-auto px-4 py-8 flex flex-col gap-12">
+        <!-- CBT Tests -->
+        <div class="flex flex-col md:flex-row items-center gap-8 bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+            <div class="md:w-1/2 flex flex-col items-start text-left">
+                <div class="inline-flex items-center justify-center p-3 bg-indigo-100 rounded-xl text-indigo-600 mb-4">
+                    <i class="fa-solid fa-laptop-code text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">CBT Mock Tests Platform</h2>
+                <p class="text-lg text-slate-600 mb-6">
+                    Practice under real exam conditions with our full-length Computer Based Testing (CBT) platform designed specifically for Econ entrance exams.
+                </p>
+                <a href="https://econ-entrance-cbt-tests.pages.dev/" target="_blank" rel="noopener noreferrer" 
+                   class="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg shadow-md transition-colors text-center inline-flex items-center gap-2">
+                    Attempt CBT Mock Tests <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="md:w-1/2 w-full">
+                <img src="Test_int.png" alt="CBT Platform Interface" class="w-full rounded-xl shadow-lg border border-slate-200">
+            </div>
+        </div>
+
+        <!-- Doubts & Explanations -->
+        <div class="flex flex-col md:flex-row items-center gap-8 bg-indigo-50 p-8 rounded-2xl shadow-sm border border-indigo-100">
+            <div class="md:w-1/2 flex flex-col items-start text-left">
+                <div class="inline-flex items-center justify-center p-3 bg-white rounded-xl text-indigo-600 mb-4 shadow-sm">
+                    <i class="fa-solid fa-comments text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Doubts & Explanations</h2>
+                <p class="text-lg text-slate-600 mb-6">
+                    Access my personal repository of detailed solutions, concept breakdowns, and answers to common preparation doubts.
+                </p>
+                <a href="http://econ-entrance-doubts-and-explanations.pages.dev/" target="_blank" rel="noopener noreferrer"
+                   class="px-8 py-3 bg-white border border-indigo-200 text-indigo-700 hover:bg-indigo-50 font-semibold rounded-lg shadow-sm transition-colors text-center inline-flex items-center gap-2">
+                    Browse Explanations <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="md:w-1/2 w-full flex items-center justify-center text-indigo-300">
+                <i class="fa-solid fa-book-open-reader" style="font-size: 8rem;"></i>
+            </div>
+        </div>
+    </section>
 
     <!-- Special Spotlight Section -->
     <section class="max-w-7xl mx-auto px-4 py-12">
@@ -65,7 +98,7 @@
             <i class="fa-solid fa-star text-amber-400"></i> Special Spotlight
         </h2>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="spotlight-grid">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start" id="spotlight-grid">
             
             <!-- Card 1 -->
             <div class="bg-white rounded-xl shadow-md border-t-4 border-indigo-600 overflow-hidden flex flex-col transition-all">
@@ -160,7 +193,7 @@
                     <h3 class="text-lg font-bold text-slate-900">Major Economists</h3>
                 </div>
                 <p class="text-sm text-slate-600 mb-4 flex-grow">An engaging audio overview discussing the most influential economists in history and their core economic theories.</p>
-                <button onclick="document.getElementById('track-selector').value='Special/Major_Economists_and_their_Economic_Theories.m4a'; document.getElementById('track-selector').dispatchEvent(new Event('change'));" class="w-full py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
+                <button onclick="document.getElementById('sticky-audio-container').classList.remove('hidden'); document.getElementById('track-selector').value='Special/Major_Economists_and_their_Economic_Theories.m4a'; document.getElementById('track-selector').dispatchEvent(new Event('change'));" class="w-full py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
                     <i class="fa-solid fa-play mr-1"></i> Play in Player
                 </button>
             </div>
@@ -174,7 +207,7 @@
                     <h3 class="text-lg font-bold text-slate-900">India's $45 Trillion Heist</h3>
                 </div>
                 <p class="text-sm text-slate-600 mb-4 flex-grow">A deep dive audio discussion into the economic historical context of wealth extraction from India and its subsequent recovery trajectory.</p>
-                <button onclick="document.getElementById('track-selector').value='Special/India’s_$45_Trillion_Heist_and_Recovery.m4a'; document.getElementById('track-selector').dispatchEvent(new Event('change'));" class="w-full py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
+                <button onclick="document.getElementById('sticky-audio-container').classList.remove('hidden'); document.getElementById('track-selector').value='Special/India’s_$45_Trillion_Heist_and_Recovery.m4a'; document.getElementById('track-selector').dispatchEvent(new Event('change'));" class="w-full py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
                     <i class="fa-solid fa-play mr-1"></i> Play in Player
                 </button>
             </div>
@@ -188,7 +221,7 @@
                     <h3 class="text-lg font-bold text-slate-900">Books and Authors</h3>
                 </div>
                 <p class="text-sm text-slate-600 mb-4 flex-grow">A quick audio review of essential economic literature, matching famous books with their respective authors for entrance exams.</p>
-                <button onclick="document.getElementById('track-selector').value='Special/(More)Books_and_authors.m4a'; document.getElementById('track-selector').dispatchEvent(new Event('change'));" class="w-full py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
+                <button onclick="document.getElementById('sticky-audio-container').classList.remove('hidden'); document.getElementById('track-selector').value='Special/(More)Books_and_authors.m4a'; document.getElementById('track-selector').dispatchEvent(new Event('change'));" class="w-full py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
                     <i class="fa-solid fa-play mr-1"></i> Play in Player
                 </button>
             </div>
@@ -314,7 +347,7 @@
     </footer>
 
     <!-- Sticky Audio Player -->
-    <div class="fixed bottom-0 left-0 w-full bg-slate-900 text-white shadow-2xl z-50 border-t border-slate-800 p-3 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+    <div id="sticky-audio-container" class="hidden fixed bottom-0 left-0 w-full bg-slate-900 text-white shadow-2xl z-50 border-t border-slate-800 p-3 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
         <!-- Hidden Audio Element -->
         <audio id="global-audio-player" preload="metadata">
             <source src="Special/Major_Economists_and_their_Economic_Theories.m4a" type="audio/mp4">
@@ -349,6 +382,9 @@
             <a id="download-btn" href="Special/Major_Economists_and_their_Economic_Theories.m4a" download class="flex-shrink-0 p-2 text-slate-400 hover:text-white transition-colors" title="Download Audio">
                 <i class="fa-solid fa-download"></i>
             </a>
+            <button id="close-player-btn" class="flex-shrink-0 p-2 text-slate-400 hover:text-white transition-colors ml-2" title="Close Player">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
         </div>
     </div>
 
@@ -382,6 +418,16 @@
             const durationTimeEl = document.getElementById('duration-time');
             const progressContainer = document.getElementById('progress-bar-container');
             const progressBar = document.getElementById('progress-bar');
+            const audioContainer = document.getElementById('sticky-audio-container');
+            const closePlayerBtn = document.getElementById('close-player-btn');
+
+            if (closePlayerBtn) {
+                closePlayerBtn.addEventListener('click', () => {
+                    audioContainer.classList.add('hidden');
+                    audio.pause();
+                    updatePlayState();
+                });
+            }
 
             // Format time helper (seconds -> m:ss)
             function formatTime(seconds) {
