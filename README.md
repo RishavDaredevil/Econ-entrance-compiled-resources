@@ -1,5 +1,7 @@
 # 🎓 Econ Entrance Hub (India)
 
+**[🌐 Click here to visit the Live Website!](https://rishavdaredevil.github.io/Econ-entrance-compiled-resources/)**
+
 Welcome to my personal, curated collection of resources for Master's in Economics Aspirants in India! 
 
 This repository serves as a central hub for students preparing for **ISI MSQE, CUET PG, and IIT JAM**. It compiles high-yield study materials, visual cheat sheets, audio notes, and deep-research documents to streamline your exam preparation.
@@ -11,7 +13,7 @@ This repository serves as a central hub for students preparing for **ISI MSQE, C
 This project is part of a three-tier study ecosystem designed to cover all aspects of exam prep:
 
 1. **📚 The Resource Hub (This Repository):**
-   The primary static site hosting categorized study materials, visual aids, and interactive notebooks.
+   The primary static site hosting categorized study materials, visual aids, and interactive notebooks. **[Visit Site](https://rishavdaredevil.github.io/Econ-entrance-compiled-resources/)**
 2. **💻 CBT Mock Tests Platform:**
    A platform to practice Previous Year Questions (PYQs) using an interactive, simulated Computer-Based Test (CBT) interface. It tracks your attempt statistics and time spent on each question alongside the official exam PDFs.
 3. **💬 Doubts & Explanations Repository:**
