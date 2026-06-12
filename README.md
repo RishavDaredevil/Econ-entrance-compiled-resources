@@ -13,9 +13,11 @@ This project is part of a three-tier study ecosystem designed to cover all aspec
 1. **📚 The Resource Hub (This Repository):**
    The primary static site hosting categorized study materials, visual aids, and interactive notebooks.
 2. **💻 CBT Mock Tests Platform:**
-   A full-length Computer Based Testing (CBT) environment designed to simulate real exam conditions for Econ entrances.
+   A platform to practice Previous Year Questions (PYQs) using an interactive, simulated Computer-Based Test (CBT) interface. It tracks your attempt statistics and time spent on each question alongside the official exam PDFs.
 3. **💬 Doubts & Explanations Repository:**
-   A dedicated site for personal solutions, concept breakdowns, and answers to common preparation doubts.
+   A unified portal hosting 31+ detailed explanation papers for ISI MSQE, CUET PG, and IIT JAM. It features personal doubts encountered while solving PYQs and their comprehensive explanations.
+
+⭐ **If you find this ecosystem helpful for your preparation, please consider giving the repository a star!** ⭐
 
 ---
 
@@ -73,3 +75,5 @@ To preview the site locally:
 ---
 
 *Happy studying, and best of luck with your entrance exams!* 🎯
+
+⭐ **Don't forget to star the project if it helped you!** ⭐
