@@ -78,84 +78,79 @@
             <i class="fa-solid fa-star text-amber-400"></i> Special Spotlight
         </h2>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start" id="spotlight-grid">
             
-            <!-- Card 1 -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-indigo-600 overflow-hidden flex flex-col">
-                <div class="h-40 bg-slate-100 flex items-center justify-center overflow-hidden">
-                    <img src="Special/International Trade.png" alt="International Trade" class="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition-opacity">
+            <!-- Card 1: Economists' Theories -->
+            <div class="bg-white rounded-xl shadow-md border-t-4 border-indigo-600 overflow-hidden flex flex-col transition-all">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Economists' Theories</h3>
+                    <p class="text-sm text-slate-600 mb-4">Glimpse: Chronological mapping of major economists.</p>
+                    <button onclick="toggleCard(this)" class="text-indigo-600 font-medium text-sm hover:underline">Show Glimpse ▾</button>
                 </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">International Trade</h3>
-                        <p class="text-sm text-slate-600 mb-4">Visual cheat sheet mapping out key international trade theories.</p>
-                    </div>
-                    <a href="Special/International Trade.png" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
-                        View Resource
+                <div class="hidden flex-col p-5 border-t border-slate-100 bg-slate-50">
+                    <img src="Special/Many Economists' Theories.png" alt="Many Economists' Theories" class="w-full rounded mb-4 shadow-sm">
+                    <a href="history-and-tools.html" class="block w-full text-center py-2 bg-indigo-600 text-white hover:bg-indigo-700 rounded-lg font-medium transition-colors text-sm">
+                        Explore More in History
                     </a>
                 </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-indigo-600 overflow-hidden flex flex-col">
-                <div class="h-40 bg-slate-100 flex items-center justify-center overflow-hidden">
-                    <img src="Special/optimization.png" alt="Optimization Cheat Sheet" class="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition-opacity">
+            <!-- Card 2: Five Year Plans -->
+            <div class="bg-white rounded-xl shadow-md border-t-4 border-indigo-600 overflow-hidden flex flex-col transition-all">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">India's Five Year Plans</h3>
+                    <p class="text-sm text-slate-600 mb-4">Glimpse: Infographic of all the five-year plans of India and what each entailed.</p>
+                    <button onclick="toggleCard(this)" class="text-indigo-600 font-medium text-sm hover:underline">Show Glimpse ▾</button>
                 </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">Optimization</h3>
-                        <p class="text-sm text-slate-600 mb-4">Geometric properties and optimization math visualization.</p>
-                    </div>
-                    <a href="Special/optimization.png" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
-                        View Resource
+                <div class="hidden flex-col p-5 border-t border-slate-100 bg-slate-50">
+                    <img src="Econ-entrance-more-resources/Econ images/notebook all econ plans.png" alt="Five Year Plans" class="w-full rounded mb-4 shadow-sm">
+                    <a href="history-and-tools.html" class="block w-full text-center py-2 bg-indigo-600 text-white hover:bg-indigo-700 rounded-lg font-medium transition-colors text-sm">
+                        Explore More in History
                     </a>
                 </div>
             </div>
 
-            <!-- Card 3 -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-indigo-600 overflow-hidden flex flex-col">
-                <div class="h-40 bg-slate-100 flex items-center justify-center overflow-hidden">
-                    <img src="Special/Many Economists' Theories.png" alt="Many Economists' Theories" class="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition-opacity">
+            <!-- Card 3: International Trade Theory -->
+            <div class="bg-white rounded-xl shadow-md border-t-4 border-indigo-600 overflow-hidden flex flex-col transition-all">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">International Trade</h3>
+                    <p class="text-sm text-slate-600 mb-4">Glimpse: Key international trade theories.</p>
+                    <button onclick="toggleCard(this)" class="text-indigo-600 font-medium text-sm hover:underline">Show Glimpse ▾</button>
                 </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">Many Economists' Theories</h3>
-                        <p class="text-sm text-slate-600 mb-4">Comprehensive mapping of major economists to their primary theories.</p>
-                    </div>
-                    <a href="Special/Many Economists' Theories.png" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
-                        View Resource
+                <div class="hidden flex-col p-5 border-t border-slate-100 bg-slate-50">
+                    <img src="Special/International Trade.png" alt="International Trade" class="w-full rounded mb-4 shadow-sm">
+                    <a href="macroeconomics.html" class="block w-full text-center py-2 bg-indigo-600 text-white hover:bg-indigo-700 rounded-lg font-medium transition-colors text-sm">
+                        Explore More in Macroeconomics
                     </a>
                 </div>
             </div>
 
-            <!-- Card 4 -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-indigo-600 overflow-hidden flex flex-col">
-                <div class="h-40 bg-slate-100 flex items-center justify-center overflow-hidden">
-                    <img src="Special/(Shocks in Keynesian)SHIFTS IN THE IS CURVE.png" alt="Shocks in Keynesian IS Curve" class="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition-opacity">
+            <!-- Card 4: Optimization -->
+            <div class="bg-white rounded-xl shadow-md border-t-4 border-indigo-600 overflow-hidden flex flex-col transition-all">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Optimization</h3>
+                    <p class="text-sm text-slate-600 mb-4">Glimpse: Geometric properties and optimization.</p>
+                    <button onclick="toggleCard(this)" class="text-indigo-600 font-medium text-sm hover:underline">Show Glimpse ▾</button>
                 </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">Keynesian IS Shocks</h3>
-                        <p class="text-sm text-slate-600 mb-4">Visual breakdown of how different shocks shift the IS curve.</p>
-                    </div>
-                    <a href="Special/(Shocks in Keynesian)SHIFTS IN THE IS CURVE.png" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
-                        View Resource
+                <div class="hidden flex-col p-5 border-t border-slate-100 bg-slate-50">
+                    <img src="Special/optimization.png" alt="Optimization Cheat Sheet" class="w-full rounded mb-4 shadow-sm">
+                    <a href="math-and-optimization.html" class="block w-full text-center py-2 bg-indigo-600 text-white hover:bg-indigo-700 rounded-lg font-medium transition-colors text-sm">
+                        Explore More in Math & Viz
                     </a>
                 </div>
             </div>
 
-            <!-- Card 5 -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-indigo-600 overflow-hidden flex flex-col">
-                <div class="h-40 bg-slate-100 flex items-center justify-center text-indigo-400 text-5xl">
-                    <i class="fa-solid fa-book-journal-whills"></i>
+            <!-- Card 5: Keynesian IS Shocks -->
+            <div class="bg-white rounded-xl shadow-md border-t-4 border-indigo-600 overflow-hidden flex flex-col transition-all">
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Keynesian IS Shocks</h3>
+                    <p class="text-sm text-slate-600 mb-4">Glimpse: Shifts in the IS curve.</p>
+                    <button onclick="toggleCard(this)" class="text-indigo-600 font-medium text-sm hover:underline">Show Glimpse ▾</button>
                 </div>
-                <div class="p-5 flex-grow flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">Interactive Study Notebooks</h3>
-                        <p class="text-sm text-slate-600 mb-4">Compilation of learning materials and links.</p>
-                    </div>
-                    <a href="Special/Notebook lm links compilation.md" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-2 bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white rounded-lg font-medium transition-colors text-sm">
-                        Open Markdown
+                <div class="hidden flex-col p-5 border-t border-slate-100 bg-slate-50">
+                    <img src="Special/(Shocks in Keynesian)SHIFTS IN THE IS CURVE.png" alt="Shocks in Keynesian IS Curve" class="w-full rounded mb-4 shadow-sm">
+                    <a href="macroeconomics.html" class="block w-full text-center py-2 bg-indigo-600 text-white hover:bg-indigo-700 rounded-lg font-medium transition-colors text-sm">
+                        Explore More in Macroeconomics
                     </a>
                 </div>
             </div>
