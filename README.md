@@ -76,6 +76,20 @@ To preview the site locally:
 
 ---
 
+## 🎙️ About & Insights
+Check out my recent **[Interview at Ecopoint with Nishant Mehra](https://youtu.be/Ut5c_sD8OQU?si=u_q6d1G0yRG9C8ab)** on YouTube, where we discuss preparation strategies, insights, and experiences related to these economics entrance exams.
+
+---
+
+## 🚀 Future Roadmap
+
+This project is actively maintained. Here is what I plan to add in the future:
+* **Personal Short Notes:** My own scanned copies of handwritten short notes for each subject.
+* **Expanded CBT Testing:** Adding more previous year papers to the CBT Mock Tests interface.
+* **More Explanations:** Uploading new, detailed explanations for various exam papers in the Doubts & Explanations repository.
+
+---
+
 *Happy studying, and best of luck with your entrance exams!* 🎯
 
 ⭐ **Don't forget to star the project if it helped you!** ⭐
