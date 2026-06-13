@@ -4,7 +4,7 @@
 
 **Goal:** Pivot the architecture to a multi-page static site in a `site_build/` directory with interactive spotlight cards and 5 dedicated category pages.
 
-**Architecture:** A static site generated inside `site_build/`. Assets from `Stuff to add in directory/` will be copied here. Each `.html` page will include the global Top Navigation and the Sticky Audio Player. The Spotlight cards on the landing page will use Vanilla JS to expand inline and show a preview, rather than opening images in a new tab, with an "Explore More" link routing to the appropriate category page.
+**Architecture:** A static site generated inside `site_build/`. Assets from `All_resources/` will be copied here. Each `.html` page will include the global Top Navigation and the Sticky Audio Player. The Spotlight cards on the landing page will use Vanilla JS to expand inline and show a preview, rather than opening images in a new tab, with an "Explore More" link routing to the appropriate category page.
 
 **Tech Stack:** HTML5, Tailwind CSS (CDN), Vanilla JS, Bash (for asset copying).
 
