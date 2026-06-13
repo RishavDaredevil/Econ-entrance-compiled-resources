@@ -18,11 +18,11 @@ Check out my recent **[Interview at Ecopoint with Nishant Mehra](https://youtu.b
 This project is part of a three-tier study ecosystem designed to cover all aspects of exam prep:
 
 1. **📚 The Resource Hub (This Repository):**
-   The primary static site hosting categorized study materials, visual aids, and interactive notebooks. **[Visit Site](https://rishavdaredevil.github.io/Econ-entrance-compiled-resources/)**
+   The primary static site hosting categorized study materials, visual aids, and interactive notebooks. **[Visit Site](https://econ-entrance-hub.pages.dev/)**
 2. **💻 CBT Mock Tests Platform:**
-   A platform to practice Previous Year Questions (PYQs) using an interactive, simulated Computer-Based Test (CBT) interface. It tracks your attempt statistics and time spent on each question alongside the official exam PDFs.
+   A platform to practice Previous Year Questions (PYQs) using an interactive, simulated Computer-Based Test (CBT) interface. It tracks your attempt statistics and time spent on each question alongside the official exam PDFs. **[Visit Platform](https://econ-entrance-cbt-tests.pages.dev/)**
 3. **💬 Doubts & Explanations Repository:**
-   A unified portal hosting 31+ detailed explanation papers for ISI MSQE, CUET PG, and IIT JAM. It features personal doubts encountered while solving PYQs and their comprehensive explanations.
+   A unified portal hosting 31+ detailed explanation papers for ISI MSQE, CUET PG, and IIT JAM. It features personal doubts encountered while solving PYQs and their comprehensive explanations. **[Visit Site](https://econ-entrance-doubts-and-explanations.pages.dev/)**
 
 ⭐ **If you find this ecosystem helpful for your preparation, please consider giving the repository a star!** ⭐
 
