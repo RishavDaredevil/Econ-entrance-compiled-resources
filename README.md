@@ -8,6 +8,11 @@ This repository serves as a central hub for students preparing for **ISI MSQE, C
 
 ---
 
+## 🎙️ About & Insights
+Check out my recent **[Interview at Ecopoint with Nishant Mehra](https://youtu.be/Ut5c_sD8OQU?si=u_q6d1G0yRG9C8ab)** on YouTube, where we discuss preparation strategies, insights, and experiences related to different economics entrance exams.
+
+---
+
 ## 🌐 The Econ Entrance Ecosystem
 
 This project is part of a three-tier study ecosystem designed to cover all aspects of exam prep:
@@ -73,11 +78,6 @@ To preview the site locally:
    python3 -m http.server 8000 --directory site_build
    ```
 4. Open your browser and navigate to `http://localhost:8000`.
-
----
-
-## 🎙️ About & Insights
-Check out my recent **[Interview at Ecopoint with Nishant Mehra](https://youtu.be/Ut5c_sD8OQU?si=u_q6d1G0yRG9C8ab)** on YouTube, where we discuss preparation strategies, insights, and experiences related to these economics entrance exams.
 
 ---
 
