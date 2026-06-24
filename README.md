@@ -1,6 +1,6 @@
 # 🎓 Econ Entrance Hub (India)
 
-**[🌐 Click here to visit the Live Website!](https://rishavdaredevil.github.io/Econ-entrance-compiled-resources/)**
+**[🌐 Click here to visit the Live Website!](https://econ-entrance-hub.pages.dev/)**
 
 Welcome to my personal, curated collection of resources for Master's in Economics Aspirants in India! 
 
