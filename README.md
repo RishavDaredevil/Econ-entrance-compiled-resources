@@ -9,7 +9,7 @@ This repository serves as a central hub for students preparing for **ISI MSQE, C
 ---
 
 ## 🎙️ About & Insights
-Check out my recent **[Interview at Ecopoint with Nishant Mehra](https://youtu.be/Ut5c_sD8OQU?si=u_q6d1G0yRG9C8ab)** on YouTube, where we discuss preparation strategies, insights, and experiences related to different economics entrance exams.
+Check out my recent **[Interview at Ecopoint](https://youtu.be/Ut5c_sD8OQU?si=u_q6d1G0yRG9C8ab)** on YouTube, where we discuss preparation strategies, insights, and experiences related to different economics entrance exams.
 
 ---
 
